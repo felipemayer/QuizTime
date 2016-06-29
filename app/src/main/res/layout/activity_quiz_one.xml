@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.felipemayer.quiztime.QuizOne">
+
+    <TextView
+        android:id="@+id/quizPositionOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:text="Pergunta 1 de 10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/questionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Essa é a pergunta número 1"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 2"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button 3"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/sendAnswerOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="86dp"
+        android:layout_weight="1"
+        android:text="Send"/>
+
+</LinearLayout>
